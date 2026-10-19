@@ -1,4 +1,4 @@
-# VectorMath for Odin Gamedev
+# Gameplay Extended Math in Odin
 ![Github Actions](https://github.com/maihd/odin-vmath/actions/workflows/odin-unit-tests.yml/badge.svg) </br>
 Simple high-level enough, with common/utils procedures, better usages in game programming.
 
@@ -9,13 +9,13 @@ Simple high-level enough, with common/utils procedures, better usages in game pr
 - High level, easy to use
 - Work well with other math libary
 - Utils for game programming. And only good for game math. No redundant procedures that only use with graphics.
-    - Sometimes to times, we will see game and graphics use the same procedures, but not always
+    - Times to times, we will see game and graphics use the same procedures, but not always
     - Some graphics optimize tricks will be use different data structures and algorithms
     - And we must be concerning physics and audio system too
-    - So, I want to only focus to gamedev math in this library, and we have core:math/linalg do this for us
+    - So, I want to only focus to gamedev math in this library, and we have core:math/linalg do this for us to do graphics math
 - Only one way to do thing. Procedure should be short and easy to speak and remember.
     - Eg. Calculate cos only have one procedure cos(), no cos_f32, cos_vec2, ...
-    - Eg. Calculate cos of turn may have one procedure tcos(), no tcos_f32, cos_vec2, ...
+    - Eg. Calculate cos of turn may have one procedure tcos(), no tcos_f32, tcos_vec2, ...
 - Use common names, but not conflict or confusing with existed name for core libaries
 - Written in idiom of Odin (but sometime Odin doesnot force to do it)
 - Low types count, only support u32, i32, f32 components
@@ -46,7 +46,7 @@ Simple high-level enough, with common/utils procedures, better usages in game pr
 - The library focus only how we developer do math in coding, so I focus to design a good interface of it. And we have tmath.h from C standard library. So in the futures, the library will be only including more procedures, does not change or remove existing procedures. And luckily, Odin core math library have good performance, and included all implementations we need.
 
 ### Your talking about good usages of a math library, any showcases?
-- I'm remake neonshooter in Odin and Raylib, I use this library, just copy the vmath.odin file, rename the package, and we dont. And for the futures, I will learn more from [game math book](https://gamemath.com/book/intro.html), I decided to put the source code here, as a showcase and learning progress tracking.
+- I'm remake neonshooter in Odin and Raylib, I use this library, just copy the source files, and we done. And for the futures, I will learn more from [game math book](https://gamemath.com/book/intro.html), I decided to put the source code here, as a showcase and learning progress tracking.
 
 ### I want my own math library, fit my style?
 - Let do it, copy this file and rename, add or remove as you need. I will do no license on this library.
